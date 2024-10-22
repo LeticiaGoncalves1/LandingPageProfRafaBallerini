@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8, essencial para suportar caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Permite o design responsivo, ajustando a escala conforme o dispositivo -->
+    <title>BalleCoffe</title> <!-- Título da página exibido na aba do navegador -->
+    <meta name="description" content="Explore dezenas de variações da bebida favorita entre os devs ao redor do mundo!"> <!-- Descrição para SEO, útil para motores de busca -->
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Link para o arquivo de estilo CSS externo -->
+</head>
+
+<body>
+    <header>
+        <nav> <!-- Elemento de navegação principal -->
+            <span class="logo">balecoffee</span> <!-- Logo da página, atualmente um texto. Pode ser substituído por uma imagem futuramente -->
+            <ul class="menu"> <!-- Lista de links de navegação -->
+                <li><a href="">Home</a></li> <!-- Links vazios, substitua por URLs reais -->
+                <li><a href="">Receitas</a></li>
+                <li><a href="">Novidades</a></li>
+                <li><a href="">Melhor avaliadas</a></li>
+            </ul>
+            <a class="github" href="">Github</a> <!-- Link para o GitHub, atualmente vazio -->
+        </nav>
+    </header>
+
+    <main>
+        <div class="principal">
+            <section class="hero"> <!-- Seção principal com destaque visual (Hero) -->
+                <header class="hero-conteudo">
+                    <span class="destaque marrom">novidade</span> <!-- Indicador de novidade -->
+                    <h1>Encontre a receita perfeita!</h1> <!-- Título principal -->
+                    <hr> <!-- Linha horizontal para separação visual -->
+                    <h2 class="hero-subtitulo">Explore dezenas de variações da bebida favorita entre os devs ao redor do mundo!</h2>
+                </header>
+                <div class="hero-imagens-container"> <!-- Contêiner para imagens de café -->
+                    <!-- Cada figura está envolta em uma tag <figure> para melhorar a semântica -->
+                    <figure><img src="assets/café1.jpg" alt="imagem de café"></figure> 
+                    <figure><img src="assets/café2.jpg" alt="imagem de café"></figure>
+                    <figure><img src="assets/café3.jpg" alt="imagem de café"></figure>
+                    <figure><img src="assets/café4.jpg" alt="imagem de café"></figure>
+                    <figure><img src="assets/café5.jpg" alt="imagem de café"></figure>
+                    <figure><img src="assets/café6.jpg" alt="imagem de café"></figure>
+                    <figure><img src="assets/café7.jpg" alt="imagem de café"></figure>
+                    <figure><img src="assets/café8.jpg" alt="imagem de café"></figure>
+                    <figure><img src="assets/café9.jpg" alt="imagem de café"></figure>
+                    <figure><img src="assets/café10.jpg" alt="imagem de café"></figure>
+                    <figure><img src="assets/café11.jpg" alt="imagem de café"></figure>
+                    <figure><img src="assets/café12.jpg" alt="imagem de café"></figure>
+                    <figure><img src="assets/café13.jpg" alt="imagem de café"></figure>
+                    <figure><img src="assets/café14.jpg" alt="imagem de café"></figure>
+                </div>
+            </section>
+        </div>
+
+        <section class="botao-container"> <!-- Seção para o botão de rolagem -->
+            <button type="button">
+                <img src="assets/chevrons-down.svg" alt="seta para baixo"> <!-- Imagem de seta para indicar rolagem para baixo -->
+            </button>
+        </section>
+
+        <section class="receitas"> <!-- Seção de receitas destacadas -->
+            <header class="receitas-cabecalho">
+                <span class="destaque marrom">receitas</span> <!-- Indicador de receitas -->
+                <h2 class="receitas-titulo">Confira as últimas receitas</h2> <!-- Título da seção de receitas -->
+                <p class="receitas-subtitulo">Dê uma olhada nas receitas mais amadas!</p>
+            </header>
+            <div class="receitas-card-container"> <!-- Contêiner que agrupa os cards de receitas -->
+
+                <!-- Cada card de receita tem uma estrutura clara com título, descrição, e informações do autor -->
+                <div class="receitas-card">
+                    <header class="receitas-card-cabecalho">
+                        <div class="receitas-card-cabecalho-detalhes">
+                            <span class="destaque amarelo">em alta🔥</span> <!-- Destaque de status da receita -->
+                            <h3 class="receita-titulo">Cappuccino</h3> <!-- Título da receita -->
+                        </div>
+                        <p class="receita-avaliacao">Extraordinário • 4/4</p> <!-- Avaliação da receita -->
+                    </header>
+                    <p class="receita-descricao">Uma bebida ideal para os amantes de doce e cremosidade. 😍</p> <!-- Descrição da receita -->
+                    <div class="receita-autor">
+                        <img src="assets/pessoa1.jpg" alt="pessoa1"> <!-- Imagem do autor -->
+                        <span class="receita-autor-nome">Julia Silva</span> <!-- Nome do autor da receita -->
+                    </div>
+                </div>
+
+                <div class="receitas-card"> <!-- Repetição de um card semelhante, altere os conteúdos conforme necessário -->
+                    <header class="receitas-card-cabecalho">
+                        <div class="receitas-card-cabecalho-detalhes">
+                            <span class="destaque marrom">novo</span>
+                            <h3 class="receita-titulo">Expresso</h3>
+                        </div>
+                        <p class="receita-avaliacao">Extraordinário • 4/4</p>
+                    </header>
+                    <p class="receita-descricao">Uma bebida ideal para os amantes de doce e cremosidade. 😍</p>
+                    <div class="receita-autor">
+                        <img src="assets/pessoa2.jpg" alt="pessoa2">
+                        <span class="receita-autor-nome">Solange Braga</span>
+                    </div>
+                </div>
+
+                <!-- Exemplo de card repetido com mesmo conteúdo, considere diversificar os textos -->
+                <div class="receitas-card">
+                    <header class="receitas-card-cabecalho">
+                        <div class="receitas-card-cabecalho-detalhes">
+                            <span class="destaque marrom">novo</span>
+                            <h3 class="receita-titulo">Cappuccino</h3>
+                        </div>
+                        <p class="receita-avaliacao">Extraordinário • 4/4</p>
+                    </header>
+                    <p class="receita-descricao">Uma bebida ideal para os amantes de doce e cremosidade. 😍</p>
+                    <div class="receita-autor">
+                        <img src="assets/pessoa3.jpg" alt="pessoa3">
+                        <span class="receita-autor-nome">Maria Espindola</span>
+                    </div>
+                </div>
+
+                <div class="receitas-card">
+                    <header class="receitas-card-cabecalho">
+                        <div class="receitas-card-cabecalho-detalhes">
+                            <span class="destaque marrom">novo</span>
+                            <h3 class="receita-titulo">Cappuccino</h3>
+                        </div>
+                        <p class="receita-avaliacao">Extraordinário • 4/4</p>
+                    </header>
+                    <p class="receita-descricao">Uma bebida ideal para os amantes de doce e cremosidade. 😍</p>
+                    <div class="receita-autor">
+                        <img src="assets/pessoa4.jpg" alt="pessoa4">
+                        <span class="receita-autor-nome">Nathália Andrade</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer> <!-- Rodapé da página -->
+        <p class="footer-copy">Copyright &lt; CODEFEE /&gt;2024</p> <!-- Copyright com formatação especial -->
+        <p class="footer-autor">Feito com amor por <a href="https://github.com/LeticiaGoncalves1">Letícia Gonçalves</a></p> <!-- Link para o GitHub da autora -->
+    </footer>
+</body>
+
+</html>

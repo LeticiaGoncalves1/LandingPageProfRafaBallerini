@@ -1,0 +1,656 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Teko:wght@600&display=swap');
+
+/* Importa diferentes famílias de fontes para serem usadas no site */
+
+/* Define o estilo padrão para todos os elementos, removendo margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estiliza o corpo da página com um fundo escuro e texto claro */
+body {
+    background: #1f1517;
+    color: #ffffff;
+}
+
+/* Define a fonte padrão para o HTML */
+html {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+}
+
+/* Remove o sublinhado dos links */
+a {
+    text-decoration: none;
+}
+
+/* Remove os marcadores padrão das listas */
+ul {
+    list-style: none;
+}
+
+/* Estiliza o container de navegação */
+nav {
+    max-width: 1120px;
+    margin: auto;
+    padding: 1.5rem 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Define o estilo do logotipo */
+.logo {
+    font-family: Teko;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Estiliza o menu de navegação */
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+/* Define a cor dos links do menu */
+.menu a {
+    color: #FFF2E780; /* Cor dos links no menu */
+}
+
+/* Altera a cor dos links ao passar o mouse */
+.menu a:hover {
+    color: #A45A49; /* Cor dos links no menu ao passar o mouse */
+}
+
+/* Estilo para o link do GitHub */
+.github {
+    color: #FFF2E7;
+    font-weight: 600;
+}
+
+/* Altera a cor do link do GitHub ao passar o mouse */
+.github:hover {
+    color: #A45A49;
+}
+
+/* Define a estrutura principal da página */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Define o fundo para a seção principal */
+.principal {
+    background: #181012;
+}
+
+/* Define o layout da seção 'hero' */
+.hero {
+    max-width: 1120px;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6rem;
+    padding: 0rem 2rem;
+    margin: auto;
+    overflow: clip;
+}
+
+/* Define o layout do conteúdo dentro da seção 'hero' */
+.hero-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Estilo dos destaques no texto */
+.destaque {
+    font-family: Epiloque;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* Define a cor marrom usada nos destaques */
+.marrom {
+    color: #A45A49;
+}
+
+/* Define a cor amarela para os destaques */
+.amarelo {
+    color: #e7a80e;
+}
+
+/* Estiliza o título principal (h1) */
+h1 {
+    font-family: Montserrat;
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+/* Define a cor da linha horizontal */
+hr {
+    border-color: #A45A49;
+}
+
+/* Estilo do subtítulo na seção 'hero' */
+.hero-subtitulo {
+    color: #c7bab3;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* Organiza as imagens da seção 'hero' em múltiplas colunas */
+.hero-imagens-container {
+    max-width: 45%;
+    column-count: 4;
+    column-gap: 1rem;
+    margin: -1rem;
+}
+
+/* Estiliza as imagens dentro da seção 'hero' */
+.hero-imagens-container > figure > img {
+    width: 80%;
+    border-radius: 0.5rem;
+}
+
+/* Container para o botão de navegação */
+.botao-container {
+    width: 100%;
+    max-width: 1120px;
+    margin: auto;
+    transform: translate("0, -50%");
+}
+
+/* Estiliza o botão */
+button {
+    border: none;
+    padding: 1rem;
+    border-radius:0.5rem;
+    background: #A45A49;
+}
+
+/* Estiliza a seção de receitas */
+.receitas {
+    display: flex;
+    flex-direction: column;
+    max-width: 1120px;
+    padding: 3rem 2rem;
+    margin: auto;
+}
+
+/* Define o layout do cabeçalho das receitas */
+.receitas-cabecalho {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Estilo do título das receitas */
+.receitas-titulo {
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff2e7;
+}
+
+/* Estilo do subtítulo das receitas */
+.receitas-subtitulo {
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #c7bab3;
+}
+
+/* Container para os cartões de receitas */
+.receitas-card-container {
+    padding: 0rem 10rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/* Estiliza cada card de receita */
+.receitas-card {
+    background: #241a1c;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-basis: 29rem;
+    margin-top: 2rem;
+}
+
+/* Estilo do cabeçalho de cada card de receita */
+.receitas-card-cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+}
+
+/* Estiliza os detalhes do cabeçalho do card */
+.receitas-card-cabecalho-detalhes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Define o estilo do título de cada receita */
+.receita-titulo {
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff2e7;
+}
+
+/* Estilo para a avaliação das receitas */
+.receita-avaliacao {
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #756a67;
+}
+
+/* Define a cor e estilo da descrição da receita */
+.receita-descricao {
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #c7bab3;
+}
+
+/* Layout para o nome e imagem do autor da receita */
+.receita-autor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Estilo para a imagem do autor */
+.receita-autor > img {
+    border-radius: 20em;
+    width: 1.5rem;
+}
+
+/* Estilo para o nome do autor */
+.receita-autor-nome {
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #c7bab3;
+}
+
+/* Estiliza o rodapé da página */
+footer {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background: #23181a;
+}
+
+/* Estilo do texto de copyright no rodapé */
+.footer-copy{
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff2e7;
+}
+
+/* Estilo para o nome do autor no rodapé */
+.footer-autor{
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Cor padrão dos links no rodapé */
+footer a {
+    color: #FFF2E7; /* Cor dos links no footer */
+}
+
+/* Cor dos links no rodapé ao passar o mouse */
+footer a:hover {
+    color: #A45A49; /* Cor dos links no footer ao passar o mouse */
+}
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Teko:wght@600&display=swap');
+
+/* Importa diferentes famílias de fontes para serem usadas no site */
+
+/* Define o estilo padrão para todos os elementos, removendo margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estiliza o corpo da página com um fundo escuro e texto claro */
+body {
+    background: #1f1517;
+    color: #ffffff;
+}
+
+/* Define a fonte padrão para o HTML */
+html {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+}
+
+/* Remove o sublinhado dos links */
+a {
+    text-decoration: none;
+}
+
+/* Remove os marcadores padrão das listas */
+ul {
+    list-style: none;
+}
+
+/* Estiliza o container de navegação */
+nav {
+    max-width: 1120px;
+    margin: auto;
+    padding: 1.5rem 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Define o estilo do logotipo */
+.logo {
+    font-family: Teko;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Estiliza o menu de navegação */
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+/* Define a cor dos links do menu */
+.menu a {
+    color: #FFF2E780; /* Cor dos links no menu */
+}
+
+/* Altera a cor dos links ao passar o mouse */
+.menu a:hover {
+    color: #A45A49; /* Cor dos links no menu ao passar o mouse */
+}
+
+/* Estilo para o link do GitHub */
+.github {
+    color: #FFF2E7;
+    font-weight: 600;
+}
+
+/* Altera a cor do link do GitHub ao passar o mouse */
+.github:hover {
+    color: #A45A49;
+}
+
+/* Define a estrutura principal da página */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Define o fundo para a seção principal */
+.principal {
+    background: #181012;
+}
+
+/* Define o layout da seção 'hero' */
+.hero {
+    max-width: 1120px;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6rem;
+    padding: 0rem 2rem;
+    margin: auto;
+    overflow: clip;
+}
+
+/* Define o layout do conteúdo dentro da seção 'hero' */
+.hero-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Estilo dos destaques no texto */
+.destaque {
+    font-family: Epiloque;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* Define a cor marrom usada nos destaques */
+.marrom {
+    color: #A45A49;
+}
+
+/* Define a cor amarela para os destaques */
+.amarelo {
+    color: #e7a80e;
+}
+
+/* Estiliza o título principal (h1) */
+h1 {
+    font-family: Montserrat;
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+/* Define a cor da linha horizontal */
+hr {
+    border-color: #A45A49;
+}
+
+/* Estilo do subtítulo na seção 'hero' */
+.hero-subtitulo {
+    color: #c7bab3;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* Organiza as imagens da seção 'hero' em múltiplas colunas */
+.hero-imagens-container {
+    max-width: 45%;
+    column-count: 4;
+    column-gap: 1rem;
+    margin: -1rem;
+}
+
+/* Estiliza as imagens dentro da seção 'hero' */
+.hero-imagens-container > figure > img {
+    width: 80%;
+    border-radius: 0.5rem;
+}
+
+/* Container para o botão de navegação */
+.botao-container {
+    width: 100%;
+    max-width: 1120px;
+    margin: auto;
+    transform: translate("0, -50%");
+}
+
+/* Estiliza o botão */
+button {
+    border: none;
+    padding: 1rem;
+    border-radius:0.5rem;
+    background: #A45A49;
+}
+
+/* Estiliza a seção de receitas */
+.receitas {
+    display: flex;
+    flex-direction: column;
+    max-width: 1120px;
+    padding: 3rem 2rem;
+    margin: auto;
+}
+
+/* Define o layout do cabeçalho das receitas */
+.receitas-cabecalho {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Estilo do título das receitas */
+.receitas-titulo {
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff2e7;
+}
+
+/* Estilo do subtítulo das receitas */
+.receitas-subtitulo {
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #c7bab3;
+}
+
+/* Container para os cartões de receitas */
+.receitas-card-container {
+    padding: 0rem 10rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/* Estiliza cada card de receita */
+.receitas-card {
+    background: #241a1c;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-basis: 29rem;
+    margin-top: 2rem;
+}
+
+/* Estilo do cabeçalho de cada card de receita */
+.receitas-card-cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+}
+
+/* Estiliza os detalhes do cabeçalho do card */
+.receitas-card-cabecalho-detalhes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Define o estilo do título de cada receita */
+.receita-titulo {
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff2e7;
+}
+
+/* Estilo para a avaliação das receitas */
+.receita-avaliacao {
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #756a67;
+}
+
+/* Define a cor e estilo da descrição da receita */
+.receita-descricao {
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #c7bab3;
+}
+
+/* Layout para o nome e imagem do autor da receita */
+.receita-autor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Estilo para a imagem do autor */
+.receita-autor > img {
+    border-radius: 20em;
+    width: 1.5rem;
+}
+
+/* Estilo para o nome do autor */
+.receita-autor-nome {
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #c7bab3;
+}
+
+/* Estiliza o rodapé da página */
+footer {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background: #23181a;
+}
+
+/* Estilo do texto de copyright no rodapé */
+.footer-copy{
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff2e7;
+}
+
+/* Estilo para o nome do autor no rodapé */
+.footer-autor{
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Cor padrão dos links no rodapé */
+footer a {
+    color: #FFF2E7; /* Cor dos links no footer */
+}
+
+/* Cor dos links no rodapé ao passar o mouse */
+footer a:hover {
+    color: #A45A49; /* Cor dos links no footer ao passar o mouse */
+}
